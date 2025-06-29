@@ -1,5 +1,5 @@
 # E-mails Manager
-Um applicativo de gerenciamento de e-mails
+Um aplicativo de gerenciamento de e-mails
 
 ## Requisitos funcionais
 - O usuário precisa se autenticar pra usar o aplicativo.
