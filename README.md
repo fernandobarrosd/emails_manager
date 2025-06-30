@@ -2,7 +2,6 @@
 Um aplicativo de gerenciamento de e-mails
 
 ## Requisitos funcionais
-- O usuário precisa se autenticar pra usar o aplicativo.
 - O app tem que listar todos os e-mails cadastrados.
 - O usuário pode adicionar algum e-mail dele. 
 - O usuário pode deletar algum e-mail.
@@ -12,4 +11,4 @@ Um aplicativo de gerenciamento de e-mails
 
 ## Requisitos não funcionais
 - O aplicativo deve ser feito com a arquitetura MVVM.
-- O aplicativo deve consultar se os dados estão em cache antes de buscar no banco de dados.
+- O aplicativo deve salvar os emails localmente (no próprio dispositivo)
