@@ -6,7 +6,7 @@ Um aplicativo de gerenciamento de e-mails
 - O usuário pode adicionar algum e-mail dele. 
 - O usuário pode deletar algum e-mail.
 - O usuário pode editar algum e-mail
-- O usuário pode enviar um e-mail a patir de algum e-mail que ele adicionou
+- O usuário pode enviar um e-mail a patir de algum e-mail que ele adicionou para outro email
 
 
 ## Requisitos não funcionais
