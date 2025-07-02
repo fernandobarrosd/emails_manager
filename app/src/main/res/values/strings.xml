@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">E-mails Manager - Gerenciador de E-mails</string>
+    <string name="add_floating_action_button_content_description">Add floating action button</string>
+    <string name="warning_title">Nenhum e-mail cadastrado</string>
+    <string name="warning_message">Clique no botão + pra cadastrar um e-mail</string>
 </resources>
