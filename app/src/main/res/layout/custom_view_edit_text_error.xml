@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/background_edit_text"
+        android:inputType="text"
+        android:padding="8dp"
+        android:paddingStart="20dp"
+        android:lines="1"
+        android:hint="@string/email_name_hint_text"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+        tools:ignore="RtlSymmetry"
+        android:drawableTint="@color/white"
+        android:drawableStart="@drawable/person_icon"
+        android:drawablePadding="16dp"/>
+
+    <com.fernando.emailsmanager_gerenciadorde_emails.ui.customviews.ErrorText
+        android:id="@+id/edit_text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text"
+        android:layout_marginTop="8dp"
+        tools:text="O nome não pode ser vazio"
+        android:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

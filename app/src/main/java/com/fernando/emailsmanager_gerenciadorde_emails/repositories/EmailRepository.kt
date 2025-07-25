@@ -12,9 +12,17 @@ class EmailRepository @Inject constructor(private val emailEntityDAO: EmailEntit
             .map { it.toModelEntity() }
     }
 
-    fun saveEmail(email: Email) {
+    suspend fun saveEmail(email: Email) {
         val emailToSave = email.toRoomEntity()
         emailEntityDAO.saveEmail(emailToSave)
+    }
+
+    suspend fun existsEmailByName(name: String) : Boolean {
+        return emailEntityDAO.findEmailByName(name) != null
+    }
+
+    suspend fun existsEmail(email: String) : Boolean {
+        return emailEntityDAO.findEmail(email) != null
     }
 
     suspend fun findEmailByID(emailID: String) : Email {

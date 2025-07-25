@@ -9,13 +9,19 @@ import com.fernando.emailsmanager_gerenciadorde_emails.room.entities.EmailEntity
 @Dao
 interface EmailEntityDAO {
     @Insert
-    fun saveEmail(email: EmailEntity)
+    suspend fun saveEmail(email: EmailEntity)
 
     @Query("SELECT * FROM email_table")
     suspend fun findAllEmails() : List<EmailEntity>
 
     @Query("SELECT * FROM email_table WHERE id = :emailID")
     suspend fun findEmailByID(emailID: String) : EmailEntity
+
+    @Query("SELECT * FROM email_table WHERE name = :name")
+    suspend fun findEmailByName(name: String) : EmailEntity?
+
+    @Query("SELECT * FROM email_table WHERE email = :email")
+    suspend fun findEmail(email: String) : EmailEntity?
 
     @Query("DELETE FROM email_table WHERE id = :emailID")
     suspend fun deleteEmailByID(emailID: String)

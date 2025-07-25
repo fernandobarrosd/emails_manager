@@ -1,4 +1,4 @@
-package com.fernando.emailsmanager_gerenciadorde_emails.ui.adapters
+package com.fernando.emailsmanager_gerenciadorde_emails.ui.screens.emails
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

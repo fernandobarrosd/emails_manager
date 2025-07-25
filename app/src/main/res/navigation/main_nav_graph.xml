@@ -7,7 +7,20 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.fernando.emailsmanager_gerenciadorde_emails.ui.fragments.EmailsFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_emails" />
+        android:name="com.fernando.emailsmanager_gerenciadorde_emails.ui.screens.emails.EmailsFragment"
+        android:label="E-mails"
+        tools:layout="@layout/fragment_emails" >
+        <action
+            android:id="@+id/fromHomeFragmentToAddEmailFragment"
+            app:destination="@id/addEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEmailFragment"
+        android:name="com.fernando.emailsmanager_gerenciadorde_emails.ui.screens.addEmail.AddEmailFragment"
+        android:label="Cadastro de e-mail"
+        tools:layout="@layout/fragment_add_email">
+        <action
+            android:id="@+id/fromAddFragmentToHomeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

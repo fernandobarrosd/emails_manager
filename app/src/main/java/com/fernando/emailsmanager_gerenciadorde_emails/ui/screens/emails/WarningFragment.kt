@@ -1,4 +1,4 @@
-package com.fernando.emailsmanager_gerenciadorde_emails.ui.fragments
+package com.fernando.emailsmanager_gerenciadorde_emails.ui.screens.emails
 
 import androidx.fragment.app.Fragment
 import com.fernando.emailsmanager_gerenciadorde_emails.R

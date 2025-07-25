@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextError">
+        <attr name="labelText" format="string"/>
+        <attr name="placeholder" format="string"/>
+        <attr name="errorText" format="string"/>
+        <attr name="error" format="boolean"/>
+        <attr name="iconSrc" format="reference"/>
+        <attr name="android:inputType"/>
+    </declare-styleable>
+</resources>

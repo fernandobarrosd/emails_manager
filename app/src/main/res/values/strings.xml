@@ -3,4 +3,13 @@
     <string name="add_floating_action_button_content_description">Add floating action button</string>
     <string name="warning_title">Nenhum e-mail cadastrado</string>
     <string name="warning_message">Clique no botão + pra cadastrar um e-mail</string>
+    <string name="email_name_hint_text">Nome</string>
+    <string name="email_value_hint_text">E-mail</string>
+    <string name="btn_add_text">Adicionar</string>
+    <string name="add_email_form_title">Preencha as informações</string>
+    <string name="empty_email_error_text">O e-mail não pode ser vazio</string>
+    <string name="invalid_email_error_text">E-mail inválido</string>
+    <string name="empty_name_error_text">O nome não pode ser vazio</string>
+    <string name="invalid_name_error_text">O nome do e-mail deve possuir no minimo 2 caracteres</string>
+    <string name="add_email_error_text">Nome ou e-mail já existentes, tente novamente!</string>
 </resources>
